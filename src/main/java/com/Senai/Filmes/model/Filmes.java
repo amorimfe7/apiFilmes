@@ -14,8 +14,8 @@ import java.util.UUID;
 
 @Entity //@Entity diz p/ o programa que não é uma classe normal, e sim, uma classe que representa uma entidade no banco de dados! Preciso colocar, se não é classe normal
 @Data //cria estrutura (métodos) da minha classe (construtor, get's e set's, toString)
-@Table(name = "Filme")
-public class Filme {
+@Table(name = "filme")
+public class Filmes {
 
     @Id //definindo que é uma tabela de ID, ou seja, a nossa PRIMARY KEY
     @GeneratedValue(strategy = GenerationType.UUID) //“Gere automaticamente um ID do tipo UUID”
