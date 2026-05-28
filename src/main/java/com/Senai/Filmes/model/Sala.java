@@ -7,14 +7,15 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 @Data
 @NoArgsConstructor
-@Table(name="sala")
 @Entity
+@Table(name="sala")
 
-public class Salas {
+public class Sala {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
@@ -27,8 +28,7 @@ public class Salas {
     private Integer totalAssentos;
 
     //orphanRemoval = sala é o pai, assentos são os filhos, e se eu remover pai remove tb filhos
-    @OneToMany(mappedBy = "sala",cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Assento> listaAssentos = new ArrayList<>();
-
+//    @OneToMany(mappedBy = "sala",cascade = CascadeType.ALL, orphanRemoval = true)
+//    private List<Assento> listaAssentos = new ArrayList<>();
 
 }

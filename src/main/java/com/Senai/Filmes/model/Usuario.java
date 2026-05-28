@@ -19,7 +19,7 @@ import java.util.UUID;
 @NoArgsConstructor //cria construtor vázio p/ acesso
 
 
-public class Usuarios {
+public class Usuario {
 
     @Id //definindo que é uma tabela de ID, ou seja, a nossa PRIMARY KEY
     @GeneratedValue(strategy = GenerationType.UUID) //“Gere automaticamente um ID do tipo UUID”
